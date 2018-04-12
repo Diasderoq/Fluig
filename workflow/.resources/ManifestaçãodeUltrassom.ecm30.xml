@@ -1,0 +1,622 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>Manifestação de Ultrassom</processId>
+    </processDefinitionPK>
+    <processDescription>Manifestação de Ultrassom</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Área médica</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Manifestação de Ultrassom</processId>
+      <version>24</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>39290</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>1</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>110</positionX>
+      <positionY>149</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Gerencia Medica</stateName>
+      <stateDescription>Gerencia Medica</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;IDGestor&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>380</positionX>
+      <positionY>132</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Requerente</stateName>
+      <stateDescription>Requerente</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>230</positionX>
+      <positionY>116</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </processStatePK>
+      <stateName>Finalizar Solicitação</stateName>
+      <stateDescription>Finalizar Solicitação</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>549</positionX>
+      <positionY>109</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>700</positionX>
+      <positionY>149</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>24</version>
+        <sequence>2</sequence>
+      </conditionProcessStatePK>
+      <condition>ValidaAnexo()</condition>
+      <destinationSequenceId>4</destinationSequenceId>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>24</version>
+        <sequence>2</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AtivAtual&quot;)  == &quot;&quot; ||  hAPI.getCardValue(&quot;AtivDest&quot;)  == &quot;&quot;</condition>
+      <destinationSequenceId>4</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;IDGestor&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>24</version>
+        <sequence>2</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AtivDest&quot;)  == &quot;1&quot;</condition>
+      <destinationSequenceId>4</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;IDGestor&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <expressionOrder>4</expressionOrder>
+        <version>24</version>
+        <sequence>2</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AtivDest&quot;)  == &quot;4&quot;</condition>
+      <destinationSequenceId>1</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;Requerente&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>24</version>
+        <sequence>6</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;RespostaFormal&quot;)  != &quot;&quot;</condition>
+      <destinationSequenceId>8</destinationSequenceId>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>5</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>7</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>9</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>1</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>22</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>1</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskComplete</eventId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>/*&#xd;
+function beforeTaskComplete(colleagueId,nextSequenceId,userList){&#xd;
+	&#xd;
+	&#xd;
+&#xd;
+&#xd;
+	var currentUser = getValue(&quot;WKUser&quot;);&#xd;
+	&#xd;
+		&#xd;
+	hAPI.setCardValue(&quot;Requerente&quot;,currentUser);&#xd;
+	&#xd;
+	&#xd;
+	var nomeSolicitante = hAPI.getCardValue(&quot;nomeSolicitante&quot;);&#xd;
+	var numeroSolicitacao = hAPI.getCardValue(&quot;numeroSolicitacao&quot;);&#xd;
+	var RespostaFormal = hAPI.getCardValue(&quot;RespostaFormal&quot;);&#xd;
+	&#xd;
+	&#xd;
+	try{&#xd;
+			log.info(&apos;*** Teste de Email: try&apos;);&#xd;
+		   //Monta mapa com parâmetros do template&#xd;
+		   var parametros = new java.util.HashMap();&#xd;
+		   parametros.put(&quot;nomeSolicitante&quot;, nomeSolicitante);&#xd;
+		   parametros.put(&quot;numeroSolicitacao&quot;, numeroSolicitacao);&#xd;
+		   parametros.put(&quot;Resposta_formal&quot;, RespostaFormal);&#xd;
+		&#xd;
+		   //Este parâmetro é obrigatório e representa o assunto do e-mail&#xd;
+		    parametros.put(&quot;subject&quot;, &quot;Manifestação de Ultrassom: &quot; + numeroSolicitacao );&#xd;
+		    &#xd;
+		    var destinatarios = new java.util.ArrayList();&#xd;
+		    &#xd;
+		    destinatarios.add(&quot;93350&quot;);&#xd;
+		    &#xd;
+&#xd;
+		    log.info(&apos;*** Teste de Email Destinatarios 1: &apos; + destinatarios);&#xd;
+		    &#xd;
+		    //Envia e-mail&#xd;
+		    notifier.notify(&quot;93350&quot;, &quot;tlp_manifestacao_us&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+		    &#xd;
+		    log.info(&apos;*** Teste de Email FIM &apos;);&#xd;
+		    &#xd;
+		&#xd;
+	}catch(e){&#xd;
+		log.info(&apos;*** Teste de Email catch: &apos;);&#xd;
+		&#xd;
+//		   log.info(e);&#xd;
+		  &#xd;
+		}&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+*/</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>/*&#xd;
+ &#xd;
+ function afterProcessCreate(processId){&#xd;
+	&#xd;
+&#xd;
+	var currentUser = getValue(&quot;WKUser&quot;);&#xd;
+	&#xd;
+		&#xd;
+	hAPI.setCardValue(&quot;Requerente&quot;,currentUser);&#xd;
+	&#xd;
+	&#xd;
+	var nomeSolicitante = hAPI.getCardValue(&quot;nomeSolicitante&quot;);&#xd;
+	var numeroSolicitacao = hAPI.getCardValue(&quot;numeroSolicitacao&quot;);&#xd;
+	var RespostaFormal = hAPI.getCardValue(&quot;RespostaFormal&quot;);&#xd;
+	&#xd;
+	&#xd;
+	try{&#xd;
+			log.info(&apos;*** Teste de Email: try&apos;);&#xd;
+		   //Monta mapa com parâmetros do template&#xd;
+		   var parametros = new java.util.HashMap();&#xd;
+		   parametros.put(&quot;nomeSolicitante&quot;, nomeSolicitante);&#xd;
+		   parametros.put(&quot;numeroSolicitacao&quot;, numeroSolicitacao);&#xd;
+		   parametros.put(&quot;Resposta_formal&quot;, RespostaFormal);&#xd;
+		&#xd;
+		   //Este parâmetro é obrigatório e representa o assunto do e-mail&#xd;
+		    parametros.put(&quot;subject&quot;, &quot;Manifestação de Ultrassom: &quot; + numeroSolicitacao );&#xd;
+		    &#xd;
+		    var destinatarios = new java.util.ArrayList();&#xd;
+		    &#xd;
+		    destinatarios.add(&quot;93350&quot;);&#xd;
+		    &#xd;
+&#xd;
+		    log.info(&apos;*** Teste de Email Destinatarios 1: &apos; + destinatarios);&#xd;
+		    &#xd;
+		    //Envia e-mail&#xd;
+		    notifier.notify(&quot;93350&quot;, &quot;tlp_manifestacao_us&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+		    &#xd;
+		    log.info(&apos;*** Teste de Email FIM &apos;);&#xd;
+		    &#xd;
+		&#xd;
+	}catch(e){&#xd;
+		log.info(&apos;*** Teste de Email catch: &apos;);&#xd;
+		&#xd;
+//		   log.info(e);&#xd;
+		  &#xd;
+		}&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+}&#xd;
+*/</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ValidaAnexo</eventId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function ValidaAnexo(){&#xd;
+	&#xd;
+	var docs = hAPI.listAttachments();&#xd;
+	log.info(&quot;[validarAnexo] docs.size:&quot; + docs.size());&#xd;
+	if(docs.size() &lt; 2  ){&#xd;
+		throw &quot; Favor Anexar laudo e foto do exame&quot;;&#xd;
+	}&#xd;
+	return false;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateLeave</eventId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateLeave(sequenceId){&#xd;
+	&#xd;
+	var proximaAtividade = getValue(&quot;WKNextState&quot;);&#xd;
+	var Atividadeatual = getValue(&quot;WKNumState&quot;);&#xd;
+	var atividade = getValue(&quot;WKNumState&quot;);&#xd;
+	&#xd;
+	hAPI.setCardValue(&quot;AtivAtual&quot;,Atividadeatual);&#xd;
+    hAPI.setCardValue(&quot;AtivDest&quot;,proximaAtividade);&#xd;
+    &#xd;
+    &#xd;
+    &#xd;
+	&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeStateLeave</eventId>
+        <processId>Manifestação de Ultrassom</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeStateLeave(sequenceId){&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+			&#xd;
+			var numSolic = getValue(&quot;WKNumDocument&quot;);&#xd;
+			var matriculaUsuario = getValue(&quot;WKUser&quot;);&#xd;
+			var c1 = DatasetFactory.createConstraint(&quot;colleaguePK.colleagueId&quot;, matriculaUsuario, matriculaUsuario, ConstraintType.MUST);&#xd;
+			var dsUsuario = DatasetFactory.getDataset(&quot;colleague&quot;, [&quot;colleagueName&quot;], [c1],null);&#xd;
+			var nomeUsuario = dsUsuario.getValue(0,&quot;colleagueName&quot;);&#xd;
+			var usuario = nomeUsuario;&#xd;
+			&#xd;
+			&#xd;
+			&#xd;
+			hAPI.setCardValue(&quot;nomeSolicitante&quot;,usuario);&#xd;
+			hAPI.setCardValue(&quot;numeroSolicitacao&quot;,numSolic);&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>

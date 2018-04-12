@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript" src="../vcXMLRPC.js"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+	<input type="hidden" id="IDGestor" name="IDGestor">
+	<input type="hidden" id="Requerente" name="Requerente">
+	<input type="hidden" id="nomeSolicitante" name="nomeSolicitante">
+	<input type="hidden" id="numeroSolicitacao" name="numeroSolicitacao">
+	
+	 
+	<input type="hidden" id="AtivAtual" name="AtivAtual">
+	<input type="hidden" id="AtivDest" name="AtivDest">
+	<input type="hidden" id="UsuarioAtividade" name="UsuarioAtividade">
+	<input type="hidden" id="UsuarioAtividadeName" name="UsuarioAtividadeName">
+	
+	
+	<h1>
+		<p>
+		    <input type=image class="form-group" src="logo.png" align="middle" width="130" height="100" name="logo">
+		    Manifestação US
+		</p>
+	</h1>
+
+	
+	
+	<ul class="nav nav-tabs" role="tablist" id="div_tab">
+	    <li class="active">
+	    	<a href="#EtapaUnidade" role="tab" data-toggle="tab">
+	    		Etapa Unidade
+	    	</a>
+	    </li>	    
+	    <li>
+	    	<a href="#Atividades" role="tab" data-toggle="tab">
+	    		Avaliação Area Medica
+	    	</a>
+	    </li>
+	</ul> 
+	
+	
+	
+	<div class="tab-content">
+		
+		<div class="tab-pane active" id="EtapaUnidade">  	
+			<div class="col-md-10 col-md-offset-1">			
+				
+			
+				<div class="row">
+					<div class="col-md-5 has-error" id="1"> 
+						<label>
+							Nome Do Médico<span style="color: red"><strong>*</strong></span>
+						</label>
+						
+						<input type="zoom" class="form-control" id="ZoMedico" name="ZoMedico" 
+						data-zoom="{
+							'displayKey':'NOME',
+							'datasetId':'ds_Medico',
+							'maximumSelectionLength':'1',
+							'placeholder':'Escolha o Medico',
+							
+							'fields':[
+								{
+								'field':'NOME',
+								'label':'Medico',
+								'standard':'true',
+								'search':'true'
+								}
+
+							]
+						}"
+						/>
+						
+		    		</div>
+		    		
+		    				    		
+		    			    		
+		    		<div class="col-md-2 has-error" id="4">
+		    			<label>
+		    				Matrícula Paciente <span style="color: red"><strong>*</strong></span>
+		    			</label>
+		    			<input type="text" class="form-control" id="MatriculaPaciente" name="MatriculaPaciente" maxlength="30">
+		    		</div>
+		    		
+		    		
+		    		
+		    		<div class="col-md-5 has-error" id="30">
+		    			<label>
+		    				Nome Paciente <span style="color: red"><strong>*</strong></span>
+		    			</label>
+		    			<input type="text" class="form-control" id="NomePaciente" name="NomePaciente" maxlength="30">
+		    		</div>
+		    	
+		    		
+				</div>
+				<br>
+			
+				<div class="row" >
+					<div class="col-md-2 has-error " id="div_TipoDeManifestacao">
+			    		<label>
+			    			Tipo de Manifestação <span style="color: red"><strong>*</strong></span>	    		
+			    		</label>
+			    		<select type="text" class="form-control" name="TipoDeManifestacao" id="TipoDeManifestacao">
+				    		<option value="0"></option>
+				    		<option value="Conduta">Conduta</option>
+				    		<option value="Laudo">Laudo</option>
+						</select>
+		    		</div>
+		    		<div class="col-md-2 has-error " id="3">
+		    			<label>
+		    				Período do Exame <span style="color: red"><strong>*</strong></span>
+		    			</label>
+		    			<select type="text" class="form-control" name="PeriodoDoExame" id="PeriodoDoExame">
+		    				<option value="0"></option>
+		    				<option value="Manha">Manhã</option>
+		    				<option value="Tarde">Tarde</option>
+		    				<option value="Noite">Noite</option>
+						</select>
+		    		</div>
+		    		
+		    		
+		    		
+		    		<div class="col-md-4 has-error" id="6">
+		    			<label>
+		    				Exame Realizado <span style="color: red"><strong>*</strong></span>
+		    			</label>
+						<input type="zoom" class="form-control" id="ZoExameRealizado" name="ZoExameRealizado" 
+						data-zoom="{
+							'displayKey':'Procd_Nome',
+							'filterValues':'Modld_Sigla,US',
+							'datasetId':'DsExames',
+							'maximumSelectionLength':'1',
+							'placeholder':'Escolha o Exame',
+							
+							'fields':[
+								{
+								'field':'Procd_Nome',
+								'label':'Exame',
+								'standard':'true',
+								'search':'true'
+								}
+
+							]
+						}"
+						/>
+		    		</div>
+		    		
+		    		<div class="col-md-4 has-error" id="7">
+		    		
+		    			<label>
+		    				Unidade <span style="color: red"><strong>*</strong></span>
+		    			</label>
+						<input type="zoom" class="form-control" id="ZoUnidade" name="ZoUnidade" 
+							data-zoom="{
+								'displayKey':'Undds_Nome',
+								'datasetId':'DS_Unidade',
+								'maximumSelectionLength':'1',
+								'placeholder':'Escolha a Unidade',
+								
+								'fields':[
+									{
+									'field':'Undds_Nome',
+									'label':'Unidade',
+									'standard':'true',
+									'search':'true'
+									}
+
+								]
+							}"
+						/>
+		    		</div>	
+				</div>
+				<br>
+				<div class="row">
+				
+					<div class="col-md-2  has-error " id="2">
+			    		<label>
+			    		Data do Exame <span style="color: red"><strong>*</strong></span>
+			    		</label>
+						<input type="text" class="form-control" name="DataDoExame" id="DataDoExame"/>
+		    		</div>
+					
+				
+					<div class="col-md-4  has-error" id="div_Solicitante">
+						<label>
+							Solicitante <span style="color: red"><strong>*</strong></span>
+						</label>
+						<input type="text" class="form-control" name="Solicitante" id="Solicitante" onblur='validate(this);'/>
+					
+					</div>
+					
+					<div class="col-md-6 has-error" id="div_ZoGerenciaMedica">
+						
+						<label>
+							Gerência Médica <span style="color: red"><strong>*</strong></span>
+						</label>
+							<input type="zoom" class="form-control" id="ZoGerenciaMedica" name="ZoGerenciaMedica" 
+							data-zoom="{
+								'displayKey':'NomeMedico',
+								'datasetId':'GerentesMedicos',
+								'maximumSelectionLength':'1',
+								'placeholder':'Escolha a Unidade',
+								
+								'fields':[
+									{
+									'field':'NomeMedico',
+									'label':'Medico',
+									'standard':'true',
+									'search':'true'
+									}
+
+								]
+							}"
+							/>
+					</div>
+				</div>
+				<br>
+				<div class="row" id="div_relato" name="div_relato">
+					<div class="col-md-12  has-error " id="div_relato_aux">
+						<label>
+							Relato do Aux. De Sala <span style="color: red"><strong>*</strong></span>
+						</label>
+						<textarea type="hidden" class="form-control" id="RelatoDoAuxDeSala" name="RelatoDoAuxDeSala" rows="5" maxlength=300></textarea>
+					</div>
+				</div>
+				<br>
+				<div class="row" id="Div_RespotaFormalUnidade" name="Div_RespotaFormalUnidade">
+					<div class="col-md-12">
+						<label>
+							Resposta Formal
+						</label>
+						<textarea type="hidden" class="form-control" id="RespostaFormal" name="RespostaFormal" rows="10" maxlength=100000></textarea>
+						
+					</div>
+				</div>
+				
+				
+			
+			</div>
+		</div> 
+		<!--Fim Do Bloco Etapa Unidade-->
+		
+			
+		<!--Etapa Gerente Medico-->
+		<div class="tab-pane" id="Atividades">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-8" id="10">
+						<label>
+						
+							Contato com Médico
+							
+						</label>
+							
+							<textarea type="text" class="form-control" name="ContatoMedicotxt" id="ContatoMedicotxt" row="10"></textarea>
+							
+						
+					</div>
+				</div>
+					<br>
+				
+				<div class="row">
+					<div class="col-md-3" id="10">
+						<label>Contato com Paciente</label>
+						<div class="radio">
+							<div class="radio">
+							    	<label>
+							    		<input type="radio" name="ContatoPaciente" id="ContatoPacientesim" value="sim" >
+							    		Sim
+							    	</label>
+							</div>
+							<div class="radio">
+							    	<label>
+							    		<input type="radio" name="ContatoPaciente" id="ContatoPacientenao" value="nao">
+							    			Não
+							    	</label>
+							</div>  
+						</div>				
+							
+					</div>
+					<div class="col-md-5" id="10">
+						<textarea type="hidden" class="form-control" name="ContatoPacientetxt" id="ContatoPacientetxt" row="20"></textarea>
+					</div>
+				</div>
+				<!--	</div>  -->
+				<br>
+				<div class="row">
+					<div class="col-md-8" id="10">
+						<label>Procedente</label>
+						<div class="radio">
+							<div class="radio">
+							    		<label>
+							    			<input type="radio" name="Procedente" id="Procedentesim" value="sim" >
+							    				Sim
+							    		</label>
+							 </div>
+							 <div class="radio">
+							    		<label>
+							    			<input type="radio" name="Procedente" id="Procedentenao" value="nao">
+							    				Não
+							    		</label>
+							 </div>  
+							 <div class="radio">
+								    	<label>
+							    			<input type="radio" name="Procedente" id="Classificação" value="Classificao">
+							    				Sem Classificação
+							    		</label>
+						    </div> 
+						</div>	
+					</div>
+					
+					<div class="teste">
+						<input type="hidden" id="teste" name="teste" class="form-control">
+					</div>					
+				</div>	
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+	</div>
+	
+	
+	
+		
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+</body>
+</html>
